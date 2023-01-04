@@ -10,6 +10,7 @@ from folium.plugins import MarkerCluster
 
 from utils import info_desc
 '''
+from utils import practice_desc as prac
 
 def app():
     
