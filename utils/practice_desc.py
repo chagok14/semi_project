@@ -9,7 +9,7 @@ def prepare():
     import matplotlib.pyplot as plt
     import seaborn as sns
 
-    df = pd.read_csv('C:\\Users\\heeji\\Documents\\project_seven\\data\\seoulSpace.csv', encoding = 'euc-kr')
+    df = pd.read_csv('C:\\Users\\heeji\\Documents\\semi_project\\data\\seoulSpace.csv', encoding = 'euc-kr')
     df.drop(columns = ['번호',  '관람시간', '관람료', '기타사항', '시설소개', '지하철', '버스정거장', 'YELLOW', 'GREEN', 'RED', 'BLUE', '공항버스', '팩스번호', '개관일자', '객석수', '휴관일'], inplace = True)
 
     df['주소'][df.index == 285] = '서울 송파구 올림픽로 300 롯데월드몰 8층 롯데콘서트홀'
