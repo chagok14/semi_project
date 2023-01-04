@@ -24,7 +24,7 @@ def app():
     
     m = folium.Map(
     location = [37.55, 126.98], zoom_start = 12)
-    
+    '''
     marker_cluster = MarkerCluster().add_to(m)
     
     for name, lat, lng, op in zip(df.문화시설명, df.위도, df.경도, df.주제분류_new):
@@ -42,8 +42,9 @@ def app():
             folium.Marker([lat, lng], popup = name, icon = folium.Icon(color = 'black')).add_to(marker_cluster)
         elif op == 6:
             folium.Marker([lat, lng], popup = name, icon = folium.Icon(color = 'blue')).add_to(marker_cluster)
+            '''
 
-    st_folium(m)
+    st_data = st_folium(m)
     
     st.write('''
     아래와 같은 색으로 각 주제분류가 표시되어 있습니다.
