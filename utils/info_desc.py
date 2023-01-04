@@ -16,7 +16,6 @@ from utils import practice_desc as prac
 def showGraph():
     df = prac.prepare()
     plt.rcParams['axes.unicode_minus'] = False
-    plt.rcParams['font.family'] = 'Malgun Gothic'
     plt.figure(figsize=(12, 30))
     sns.countplot(y=df['구명'], order=df['구명'].value_counts().index)
     plt.yticks(fontsize = 12)
@@ -27,7 +26,6 @@ def showGraph():
 def showSubGraph():
     df = prac.prepare()
     plt.rcParams['axes.unicode_minus'] = False
-    plt.rcParams['font.family'] = 'Malgun Gothic'
     fig1 = px.pie(df, values = df.주제분류.value_counts(), names = df.주제분류.unique())
     st.markdown("<h5 style='text-align: center; color: black;'>주제분류별 문화시설 개수</h5>", unsafe_allow_html=True)
     st.plotly_chart(fig1)
