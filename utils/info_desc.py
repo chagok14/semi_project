@@ -16,7 +16,8 @@ from utils import practice_desc as prac
 def showGraph():
     df = prac.prepare()
     plt.rcParams['axes.unicode_minus'] = False
-    df_sorted = df.sort_values(df['구명'].index, ascending = False)
+    count_result = df['구명'].value_counts()
+    df_sorted = df.sort_values(count_result, ascending = False)
     fig = plotly.bar(df_sorted, x = '지역구', y = 'Count')
     st.plotly_chart(fig)
     '''
