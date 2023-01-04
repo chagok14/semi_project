@@ -16,12 +16,17 @@ from utils import practice_desc as prac
 def showGraph():
     df = prac.prepare()
     plt.rcParams['axes.unicode_minus'] = False
+    df_sorted = df.sort_values(df['구명'], ascending = False)
+    fig = plotly.bar(df_sorted, x = '지역구', y = 'Count')
+    st.plotly_chart(fig)
+    '''
     plt.figure(figsize=(12, 30))
     sns.countplot(y=df['구명'], order=df['구명'].value_counts().index)
     plt.yticks(fontsize = 12)
     plt.title('구별 문화공간 개수', size = 18)
     st.set_option('deprecation.showPyplotGlobalUse', False)
     st.pyplot()
+    '''
 
 def showSubGraph():
     df = prac.prepare()
