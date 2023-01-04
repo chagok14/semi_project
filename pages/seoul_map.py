@@ -11,6 +11,7 @@ from folium.plugins import MarkerCluster
 from utils import info_desc
 '''
 from utils import practice_desc as prac
+from utils import map_desc
 
 def app():
     
