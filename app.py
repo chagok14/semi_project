@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_folium # import st_folium
+# from streamlit_folium import st_folium
 import pandas as pd
 import numpy as np
 import random 
