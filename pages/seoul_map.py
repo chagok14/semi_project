@@ -43,14 +43,13 @@ def app():
         elif op == 6:
             folium.Marker([lat, lng], popup = name, icon = folium.Icon(color = 'blue')).add_to(marker_cluster)
 
-        
-    st_data = st_folium(m)
+    st_folium(m)
     
     st.write('''
     아래와 같은 색으로 각 주제분류가 표시되어 있습니다.
     \n
     💚 초록색 : 공연장 \n
-    ❤ 빨간색 : 기타\n
+    💓 빨간색 : 기타\n
     💗 분홍색 : 도서관\n 
     🧡 주황색 : 문화예술회관 \n  
     💜 보라색 : 문화원 \n
