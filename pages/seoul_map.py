@@ -18,7 +18,6 @@ def app():
     
     df = prac.prepare()
     map_desc.map_make()
-    st_data = st_folium(m)
     
     st.write('''
     아래와 같은 색으로 각 주제분류가 표시되어 있습니다.
