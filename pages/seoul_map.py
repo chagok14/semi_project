@@ -13,6 +13,8 @@ from utils import info_desc
 import streamlit as st
 from utils import practice_desc as prac
 from utils import map_desc
+import folium
+from folium.plugins import MarkerCluster
 
 def app():
     
