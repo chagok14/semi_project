@@ -1,5 +1,3 @@
-pip install -r requirements.txt
-
 import streamlit as st
 from streamlit_folium import st_folium
 import pandas as pd
