@@ -15,6 +15,7 @@ from utils import practice_desc as prac
 from utils import map_desc
 import folium
 from folium.plugins import MarkerCluster
+from streamlit_folium import st_folium
 
 def app():
     
