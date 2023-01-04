@@ -13,7 +13,7 @@ from utils import info_desc
 from utils import practice_desc as prac
 from utils import map_desc
 from streamlit_folium import st_folium
-
+import streamlit as st
 def app():
     
     df = prac.prepare()
