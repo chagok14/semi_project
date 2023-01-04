@@ -1,3 +1,4 @@
+pip install branca==0.3.1
 import streamlit as st
 from streamlit_folium import st_folium
 import pandas as pd
