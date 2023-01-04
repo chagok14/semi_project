@@ -13,11 +13,10 @@ from utils import practice_desc as prac
 
 def map_make():
     df = prac.prepare()
-    
-    st.write(df)
-    
     m = folium.Map(
         location = [37.55, 126.98], zoom_start = 12)
+    
+    st_data = st_folium(m)
     
     marker_cluster = MarkerCluster().add_to(m)
     
